@@ -1,0 +1,12 @@
+.input {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.input input:focus {
+    outline: none;
+}
+
+.icon {
+    position: absolute;
+}
