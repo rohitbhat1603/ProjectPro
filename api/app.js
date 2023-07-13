@@ -8,9 +8,15 @@ import fs from 'fs';
 import path from 'path';
 import 'dotenv/config';
 
+const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 5000;
 
+app.use(
+    cors({
+        origin: "https://glowing-custard-6a426c.netlify.app",
+    })
+);
 app.use(express.json());
 
 app.use((req, res, next) => {
